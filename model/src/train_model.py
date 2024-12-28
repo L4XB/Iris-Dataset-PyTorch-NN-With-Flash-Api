@@ -41,8 +41,27 @@ criterion = nn.CrossEntropyLoss()
 # optimizer
 optimizer = torch.optim.Adam(model.parameters(), lr = 0.01)
 
+# deffine number of epochs
+epochs = 150
+losses = []
+for i in range(epochs):
+    y_pred = model.forward(X_train)
+    loss = criterion(y_pred, y_train)
+    losses.append(loss.detach().numpy())
+    
+    print(f"Epoch: {i} and loss: {loss}")
+    
+    optimizer.zero_grad()
+    loss.backward()
+    optimizer.step()
 
 
+print("Training Done")
+
+# plot the loss in relation to epochs
+plt.plot(range(epochs), losses)
+plt.ylabel("loss/error")
+plt.xlabel('Epoch')
+plt.show()
 
 
-print(dataset.head())

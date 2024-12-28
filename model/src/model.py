@@ -6,11 +6,11 @@ torch.manual_seed(20)
 
 class Model(nn.Module):
     # input layer with four features => sepal.lenght, sepal.with, petal.lenght, petal.width
-    # hidden layer one with 5 neurons
-    # hidden layer two with 4 neurons
-    # output layer with 3 classifications => "Setosa", "Versicolor", "Virginica"
+    # hidden layer one with 7 neurons
+    # hidden layer two with 8 neurons
+    # output layer with 3 classifications => "Setosa", "Versicolor", "Virginica" 
     
-    def __init__(self, in_features = 4, hl1 = 5, hl2 = 4, classification = 3):
+    def __init__(self, in_features = 4, hl1 = 7, hl2 = 8, classification = 3):
         super().__init__()
         self.fc1 = nn.Linear(in_features, hl1)
         self.fc2 = nn.Linear(hl1, hl2)
