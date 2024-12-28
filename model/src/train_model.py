@@ -65,3 +65,5 @@ plt.xlabel('Epoch')
 plt.show()
 
 
+# save model
+torch.save(model.state_dict(), 'iris_model.pt')
