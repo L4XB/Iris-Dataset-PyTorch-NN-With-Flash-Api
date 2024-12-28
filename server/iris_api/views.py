@@ -37,7 +37,6 @@ class IrisClassificationView(APIView):
             prediction = self.model(features)
             predicted_class = torch.argmax(prediction, dim=1).item()
 
-        # Klassennamen (optional)
         class_names = ["Setosa", "Versicolor", "Virginica"]
         predicted_class_name = class_names[predicted_class]
 
