@@ -1,6 +1,6 @@
 # Iris Dataset PyTorch NN with Flash API
 
-Willkommen zu meinem Projekt! 🎉 In diesem Projekt habe ich ein neuronales Netzwerk mit PyTorch und der Flash API erstellt, um das Iris-Dataset zu klassifizieren. Hier findest du eine detaillierte Erklärung, wie alles funktioniert.
+Willkommen zu meinem Projekt! 🎉 In diesem Projekt habe ich ein kleines neuronales Netzwerk mit PyTorch und der Flash API erstellt, um das Iris-Dataset zu klassifizieren. Hier findest du eine detaillierte Erklärung, wie alles funktioniert.
 
 ## Inhaltsverzeichnis
 1. [Überblick](#überblick)
@@ -36,10 +36,11 @@ Das Iris-Dataset wird automatisch heruntergeladen und vorbereitet. Die Daten wer
 Das neuronale Netzwerk wird mit PyTorch und der Flash API trainiert. Hier ist ein Überblick über die Architektur des Modells:
 
 - Eingabeschicht: 4 Neuronen (entsprechend den Merkmalen des Iris-Datasets)
-- Verborgene Schicht: 10 Neuronen
+- Verborgene Schicht 1: 7 Neuronen
+- Verborgene Schicht 1: 8 Neuronen
 - Ausgabeschicht: 3 Neuronen (entsprechend den drei Klassen des Iris-Datasets)
 
-Das Training wird über mehrere Epochen durchgeführt, und der Verlust wird überwacht, um die Leistung des Modells zu bewerten.
+Das Training wird über 150 Epochen durchgeführt, und der Verlust wird überwacht, um die Leistung des Modells zu bewerten.
 
 ## Ergebnisse
 Nach dem Training wird die Leistung des Modells anhand des Testdatensatzes bewertet. Hier ist eine Grafik, die den Verlust über die Epochen zeigt:
