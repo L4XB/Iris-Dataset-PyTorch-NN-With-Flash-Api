@@ -18,7 +18,7 @@ Um das Projekt lokal auszuführen, folge diesen Schritten:
 
 1. Klone das Repository:
     ```bash
-    git clone https://github.com/L$XB/iris_dataset_pytorch_nn_with_flash_api.git
+    git clone https://github.com/L4XB/iris_dataset_pytorch_nn_with_flash_api.git
     ```
 2. Wechsle in das Projektverzeichnis:
     ```bash
