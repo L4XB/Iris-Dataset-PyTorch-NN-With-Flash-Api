@@ -30,15 +30,18 @@ Um das Projekt lokal auszuführen, folge diesen Schritten:
     ```
 
 ## Datenvorbereitung
-Das Iris-Dataset wird automatisch heruntergeladen und vorbereitet. Die Daten werden in Trainings- und Testdatensätze aufgeteilt.
+Das Iris-Dataset ist bereits heruntergelande und befinden sich im Verzechnis 
+ ```bash
+    iris_dataset_pytorch_nn_with_flash_api/model/data/iris.csv"
+   ```
 
 ## Modelltraining
 Das neuronale Netzwerk wird mit PyTorch und der Flash API trainiert. Hier ist ein Überblick über die Architektur des Modells:
 
-- Eingabeschicht: 4 Neuronen (entsprechend den Merkmalen des Iris-Datasets)
-- Verborgene Schicht 1: 7 Neuronen
-- Verborgene Schicht 1: 8 Neuronen
-- Ausgabeschicht: 3 Neuronen (entsprechend den drei Klassen des Iris-Datasets)
+- Eingabeschicht : 4 Features (entsprechend den Merkmalen des Iris-Datasets)
+- Hidden Layer 1: 7 Neuronen
+- Hidden Layer 1: 8 Neuronen
+- Ausgabeschicht: 3 Klassifizierungen (entsprechend den drei Klassen des Iris-Datasets)
 
 Das Training wird über 150 Epochen durchgeführt, und der Verlust wird überwacht, um die Leistung des Modells zu bewerten.
 
