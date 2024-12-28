@@ -7,7 +7,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from model.src.model import Model
+
+from .iris_model import Model
+
 
 
 class IrisClassificationView(APIView):
@@ -29,3 +31,7 @@ class IrisClassificationView(APIView):
         
         
         return Response({"message" : "Endpoint Works finde"}, status= status.HTTP_200_OK)
+
+
+
+
