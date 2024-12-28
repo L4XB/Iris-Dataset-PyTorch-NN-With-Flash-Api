@@ -51,16 +51,7 @@ Nach dem Training wird die Leistung des Modells anhand des Testdatensatzes bewer
 ![Model Loss over Epochs](model/graphics/model_loss_epochs_graphic.png)
 
 ## Verwendung
-Um das trainierte Modell zu verwenden, kannst du das folgende Skript ausführen:
-
-```python
-python predict.py --input "5.1,3.5,1.4,0.2"
-```
-
-Das Skript gibt die vorhergesagte Klasse der Iris-Blume basierend auf den eingegebenen Merkmalen aus.
-
-## API-Verwendung
-Das trainierte Modell kann auch über die Flask API abgefragt werden. Sende eine POST-Anfrage an `localhost:8000/api/classification` mit folgendem Body:
+Das trainierte Modell kann  über die Flask API abgefragt werden. Sende eine POST-Anfrage an `localhost:8000/api/classification` mit folgendem Body:
 
 ```json
 {
@@ -70,4 +61,5 @@ Das trainierte Modell kann auch über die Flask API abgefragt werden. Sende eine
     "petal_width": 2.1
 }
 ```
+
 Viel Spaß beim Ausprobieren! 🚀
