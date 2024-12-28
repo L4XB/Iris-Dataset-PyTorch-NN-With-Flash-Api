@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'iris_api'
+    'rest_framework',
+    'iris_api',
 ]
 
 MIDDLEWARE = [
