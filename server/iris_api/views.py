@@ -4,9 +4,6 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import numpy as np
 import os
 
 from .iris_model import Model
