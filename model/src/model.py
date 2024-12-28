@@ -1,9 +1,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from sklearn.model_selection import train_test_split
 
-torch.manual_seed(31)
+torch.manual_seed(20)
 
 class Model(nn.Module):
     # input layer with four features => sepal.lenght, sepal.with, petal.lenght, petal.width
